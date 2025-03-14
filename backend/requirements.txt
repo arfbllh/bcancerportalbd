@@ -35,5 +35,5 @@ six==1.17.0
 SQLAlchemy==2.0.39
 typing_extensions==4.12.2
 tzdata==2025.1
-Werkzeug==2.2.3
+Werkzeug==3.0.6
 wrapt==1.17.2
