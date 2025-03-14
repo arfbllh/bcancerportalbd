@@ -462,11 +462,11 @@ class Summary(Resource):
 
             # Fetch the data from the database
             result = db.execute(text(
-                "SELECT days_to_sample_collection_ FROM brca_tcga_pub2015_data_clinical_sample where days_to_sample_collection_ <> '[Not Available]'"
+                "SELECT days_to_collection FROM brca_tcga_pub2015_data_clinical_sample where days_to_collection <> '[Not Available]'"
             )).mappings().all()
 
             # Convert the days_to_sample_collection_ values to integers
-            collection_days = [int(row["days_to_sample_collection_"]) for row in result]
+            collection_days = [int(row["days_to_collection"]) for row in result]
 
             # Calculate quantiles to create more balanced ranges
             quantiles = np.quantile(collection_days, [0, 0.2, 0.4, 0.6, 0.8, 1.0])
