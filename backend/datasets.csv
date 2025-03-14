@@ -1,0 +1,9 @@
+name,type
+brca_tcga_pub2015,Invasive Breast Carcinoma
+brca_tcga,Invasive Breast Carcinoma
+brca_tcga_pan_can_atlas_2018,Invasive Breast Carcinoma
+brca_tcga_pub,Invasive Breast Carcinoma
+brca_tcga_gdc,Invasive Breast Carcinoma
+breast_cptac_gdc,Breast
+bfn_duke_nus_2015,Breast Fibroepithelial Neoplasms
+mbc_msk_2021,Metaplastic Breast Cancer
