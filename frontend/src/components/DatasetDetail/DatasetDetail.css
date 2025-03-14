@@ -1,0 +1,146 @@
+/* src/components/DatasetDetail/DatasetDetail.css */
+.dataset-detail {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dataset-detail h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2d3748;
+  }
+  
+  .dataset-type {
+    color: #718096;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #718096;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .tabs button:hover {
+    color: #4299e1;
+  }
+  
+  .tabs button.active {
+    color: #3182ce;
+    border-bottom: 2px solid #3182ce;
+  }
+  
+  .tab-content {
+    padding: 10px 0;
+  }
+  
+  .dataset-metadata {
+    background-color: #f7fafc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .metadata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .metadata-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .metadata-label {
+    font-size: 12px;
+    color: #718096;
+    margin-bottom: 5px;
+  }
+  
+  .metadata-value {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d3748;
+  }
+  
+  .dataset-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .dataset-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .dataset-action-btn:hover {
+    background-color: #edf2f7;
+  }
+  
+  .dataset-action-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #3182ce;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  .back-link svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dataset-detail {
+      padding: 15px;
+    }
+    
+    .tabs button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+    
+    .dataset-actions {
+      flex-wrap: wrap;
+    }
+  }

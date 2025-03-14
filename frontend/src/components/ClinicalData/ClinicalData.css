@@ -1,0 +1,213 @@
+/* ClinicalData.css */
+
+.clinical-data-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.clinical-data-container h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Table filters */
+.table-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+.filter-label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.filter-input {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.reset-filters {
+  align-self: flex-end;
+  margin-top: 21px; /* Align with inputs */
+  padding: 8px 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.reset-filters:hover {
+  background-color: #e9ecef;
+}
+
+/* Table */
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.clinical-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.clinical-table th,
+.clinical-table td {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.clinical-table th {
+  background-color: #f8f9fa;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.clinical-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.clinical-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+}
+
+.status-alive {
+  background-color: #28a745;
+}
+
+.status-deceased {
+  background-color: #dc3545;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.items-per-page select {
+  margin: 0 8px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.pagination-button {
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Loading and error states */
+.loading, .error, .warning {
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.loading {
+  background-color: #f8f9fa;
+  color: #666;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .pagination-info, .items-per-page {
+    margin-bottom: 10px;
+  }
+  
+  .pagination-controls {
+    flex-wrap: wrap;
+  }
+}

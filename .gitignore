@@ -1,0 +1,8 @@
+backend/datasets
+backend/.venv
+backend/*.log
+frontend/node_modules
+*.log
+*.zip
+*.pyc
+*.py[cod]
